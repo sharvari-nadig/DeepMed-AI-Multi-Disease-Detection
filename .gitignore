@@ -15,7 +15,7 @@ uv.lock
 # --- Model weights (large — keep out of git) ---
 models/*.h5
 models/*.keras
-models/*.weights.h5
+!models/best_model.weights.h5
 
 # --- Runtime artifacts ---
 runtime/
