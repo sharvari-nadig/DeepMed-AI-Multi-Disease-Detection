@@ -30,3 +30,7 @@ runtime/
 
 # build artifacts
 *.zip
+
+# Sample output reports
+!OUTPUT_SAMPLE_REPORTS/
+!OUTPUT_SAMPLE_REPORTS/*.pdf
