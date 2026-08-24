@@ -1,21 +1,19 @@
-# Place your trained CNN weights here
+# DeepDx Model Weights
 
-Copy your trained weights file into this folder so the app can run **real** inference:
+This folder contains the trained CNN model weights required for real inference.
 
-```
+### Model
+
+```text
 models/best_model.weights.h5
 ```
 
-This is the `best_model.weights.h5` produced by your training notebook
-(Cell 12 `ModelCheckpoint`, saved to your Google Drive
-`multi_diseases_experiments_csv/` folder).
+The `best_model.weights.h5` file is tracked and stored using **Git LFS** because of its large size.
 
-- The file is **git-ignored** on purpose (it is large).
-- If this file is missing, the app still starts but runs in **DEMO MODE**
-  (simulated predictions, clearly flagged in the UI) so you can test the
-  interface and the LLM layer without the weights.
-- The path can be changed via `CNN_WEIGHTS_PATH` in your `.env`.
+* **Model file:** `best_model.weights.h5`
+* **Storage:** Git LFS
+* **Purpose:** CNN-based disease image classification and inference
+* If the model weights are unavailable, the application can still start in **DEMO MODE** with simulated predictions, clearly indicated in the UI.
+* The model path can be customized through `CNN_WEIGHTS_PATH` in your `.env` file.
 
-> The app rebuilds the exact architecture from your notebook (Cell 10) and then
-> calls `model.load_weights(...)`, so the weights load without needing the full
-> `.keras` model file.
+The application reconstructs the required CNN architecture and loads the trained weights using `model.load_weights(...)`, so the full `.keras` model file is not required.
