@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- uv / venv ---
+.venv/
+uv.lock
+
+# --- Environment / secrets ---
+.env
+*.key
+
+# --- Model weights (large — keep out of git) ---
+models/*.h5
+models/*.keras
+models/*.weights.h5
+
+# --- Runtime artifacts ---
+runtime/
+*.pdf
+!docs/*.pdf
+
+# --- OS / editor ---
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+
+# build artifacts
+*.zip
