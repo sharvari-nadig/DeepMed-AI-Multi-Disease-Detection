@@ -1,4 +1,4 @@
-# Multi-Disease Detection Framework — CNN · Transformers · LLM
+# Multi-Disease Detection Framework — Deep Neural Networks & Multimodal AI
 
 A hybrid clinical-decision-**support** framework that pairs your trained **custom CNN**
 (94.82% validation accuracy across **30 disease classes**) with an **LLM reasoning layer**.
