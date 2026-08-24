@@ -36,7 +36,9 @@ multi-disease-detection-app/
 │   └── report/
 │       └── pdf_report.py       # clinical PDF export (reportlab)
 ├── frontend/                   # vanilla HTML/CSS/JS "diagnostic console" (no build step)
-├── models/                     # <-- drop best_model.weights.h5 here
+├── models/
+         └──best_model.weights.h5
+         └──readme.md                   
 ├── tools/
 │   └── export_class_names_snippet.py   # run in your Colab to regenerate the authoritative class_names.json
 ├── class_names.json            # ordered label list (index -> class) — VERIFY THIS (see below)
